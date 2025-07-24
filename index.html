@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMS Practice Question Generator</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>EMS Practice Question Generator</h1>
+      <p>
+        Generate random practice questions to sharpen your knowledge in trauma,
+        medical emergencies, EMS operations, and airway management. Select a
+        category below and click the button to get started!
+      </p>
+    </header>
+
+    <main class="main-content">
+      <div class="controls">
+        <label for="category-select">Choose a category:</label>
+        <select id="category-select">
+          <option value="random">Any</option>
+          <option value="trauma">Trauma</option>
+          <option value="medical">Medical</option>
+          <option value="operations">EMS Operations</option>
+          <option value="airway">Airway</option>
+        </select>
+        <button id="generate-btn">Generate Question</button>
+      </div>
+      <div id="question-container" class="question-container"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        © <span id="year"></span> EMS Practice Generator. Questions generated
+        via OpenAI.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
